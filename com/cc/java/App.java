@@ -15,19 +15,20 @@ public class App {
        */
 
         Cat cat = new Cat();
-        System.out.println(cat);
+        output("Blick von aussen: " + cat); // IMPLIZITE Typumwandlung  Cat --> String 
 
-        System.out.println("-----------------------");
+        output("-----------------------");
 
         Cat cat2 = new Cat();
-        System.out.println(cat2);
-
-
-
+        output("Blick von aussen: " + cat2);
 
     }
 
-   
+  
+    public static void output(String outputStr){
+        System.out.println(outputStr);
+    }
+
 
 }
 
